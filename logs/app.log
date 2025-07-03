@@ -192,3 +192,18 @@
 2025-07-03 14:06:50,289 INFO 127.0.0.1 - - [03/Jul/2025 14:06:50] "[32mPOST /login HTTP/1.1[0m" 302 -
 2025-07-03 14:06:50,640 INFO 127.0.0.1 - - [03/Jul/2025 14:06:50] "GET / HTTP/1.1" 200 -
 2025-07-03 14:06:50,876 INFO 127.0.0.1 - - [03/Jul/2025 14:06:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 15:01:57,684 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 15:01:57,684 INFO [33mPress CTRL+C to quit[0m
+2025-07-03 15:01:57,684 INFO  * Restarting with stat
+2025-07-03 15:01:58,127 WARNING  * Debugger is active!
+2025-07-03 15:01:58,131 INFO  * Debugger PIN: 109-652-705
+2025-07-03 15:03:58,768 INFO 127.0.0.1 - - [03/Jul/2025 15:03:58] "GET / HTTP/1.1" 200 -
+2025-07-03 15:03:59,046 INFO 127.0.0.1 - - [03/Jul/2025 15:03:59] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-03 15:04:01,336 INFO 127.0.0.1 - - [03/Jul/2025 15:04:01] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-03 15:04:01,665 INFO 127.0.0.1 - - [03/Jul/2025 15:04:01] "GET /login HTTP/1.1" 200 -
+2025-07-03 15:04:01,915 INFO 127.0.0.1 - - [03/Jul/2025 15:04:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 15:04:14,109 INFO Login success for user: admin
+2025-07-03 15:04:14,111 INFO 127.0.0.1 - - [03/Jul/2025 15:04:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-03 15:04:14,430 INFO 127.0.0.1 - - [03/Jul/2025 15:04:14] "GET / HTTP/1.1" 200 -
+2025-07-03 15:04:14,693 INFO 127.0.0.1 - - [03/Jul/2025 15:04:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

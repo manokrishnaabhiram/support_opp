@@ -1,6 +1,6 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, session, flash
-import mysql.connector
+# import mysql.connector  # Not needed, using pymysql instead
 import logging
 from datetime import datetime
 import pymysql

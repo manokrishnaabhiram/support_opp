@@ -1,0 +1,194 @@
+// Dummy content for app.log2025-07-03 10:02:55,564 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 10:02:55,564 INFO [33mPress CTRL+C to quit[0m
+2025-07-03 10:02:55,580 INFO  * Restarting with stat
+2025-07-03 10:02:55,905 WARNING  * Debugger is active!
+2025-07-03 10:02:55,918 INFO  * Debugger PIN: 863-137-132
+2025-07-03 10:03:37,379 INFO 127.0.0.1 - - [03/Jul/2025 10:03:37] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-03 10:03:37,469 INFO 127.0.0.1 - - [03/Jul/2025 10:03:37] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-03 10:03:37,790 INFO 127.0.0.1 - - [03/Jul/2025 10:03:37] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-03 10:03:38,170 INFO 127.0.0.1 - - [03/Jul/2025 10:03:38] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=TipTn6kYIJs4qiZKD8xK HTTP/1.1" 200 -
+2025-07-03 10:03:38,399 INFO 127.0.0.1 - - [03/Jul/2025 10:03:38] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-03 10:05:34,431 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 10:05:34,431 INFO [33mPress CTRL+C to quit[0m
+2025-07-03 10:05:34,431 INFO  * Restarting with stat
+2025-07-03 10:05:34,742 WARNING  * Debugger is active!
+2025-07-03 10:05:34,749 INFO  * Debugger PIN: 863-137-132
+2025-07-03 10:05:44,175 INFO 127.0.0.1 - - [03/Jul/2025 10:05:44] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-03 10:05:44,256 INFO 127.0.0.1 - - [03/Jul/2025 10:05:44] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-03 10:05:44,527 INFO 127.0.0.1 - - [03/Jul/2025 10:05:44] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-03 10:05:44,858 INFO 127.0.0.1 - - [03/Jul/2025 10:05:44] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=psSKXZgQXRRmteQkEWZG HTTP/1.1" 200 -
+2025-07-03 10:05:45,118 INFO 127.0.0.1 - - [03/Jul/2025 10:05:45] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2025-07-03 10:06:18,866 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 10:06:18,866 INFO [33mPress CTRL+C to quit[0m
+2025-07-03 10:06:18,866 INFO  * Restarting with stat
+2025-07-03 10:06:19,220 WARNING  * Debugger is active!
+2025-07-03 10:06:19,226 INFO  * Debugger PIN: 863-137-132
+2025-07-03 10:07:03,789 INFO 127.0.0.1 - - [03/Jul/2025 10:07:03] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2025-07-03 10:07:03,880 INFO 127.0.0.1 - - [03/Jul/2025 10:07:03] "[36mGET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-07-03 10:07:04,150 INFO 127.0.0.1 - - [03/Jul/2025 10:07:04] "[36mGET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-07-03 10:07:04,501 INFO 127.0.0.1 - - [03/Jul/2025 10:07:04] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=zl7QDwhh3n4RRjXOUP7J HTTP/1.1" 200 -
+2025-07-03 10:11:08,991 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 10:11:08,991 INFO [33mPress CTRL+C to quit[0m
+2025-07-03 10:11:08,994 INFO  * Restarting with stat
+2025-07-03 10:11:09,405 WARNING  * Debugger is active!
+2025-07-03 10:11:09,412 INFO  * Debugger PIN: 863-137-132
+2025-07-03 10:11:11,945 INFO 127.0.0.1 - - [03/Jul/2025 10:11:11] "[32mGET / HTTP/1.1[0m" 302 -
+2025-07-03 10:11:12,198 INFO 127.0.0.1 - - [03/Jul/2025 10:11:12] "GET /login HTTP/1.1" 200 -
+2025-07-03 10:11:12,295 INFO 127.0.0.1 - - [03/Jul/2025 10:11:12] "GET /static/style.css HTTP/1.1" 200 -
+2025-07-03 10:11:12,553 INFO 127.0.0.1 - - [03/Jul/2025 10:11:12] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-03 10:11:50,407 INFO 127.0.0.1 - - [03/Jul/2025 10:11:50] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+2025-07-03 10:11:50,750 INFO 127.0.0.1 - - [03/Jul/2025 10:11:50] "GET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-07-03 10:11:50,750 INFO 127.0.0.1 - - [03/Jul/2025 10:11:50] "GET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-07-03 10:11:51,001 INFO 127.0.0.1 - - [03/Jul/2025 10:11:50] "GET /login?__debugger__=yes&cmd=resource&f=console.png&s=Te8rdOMFN8lweo7jdRqX HTTP/1.1" 200 -
+2025-07-03 10:11:51,118 INFO 127.0.0.1 - - [03/Jul/2025 10:11:51] "GET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2025-07-03 10:12:47,392 INFO  * Detected change in 'C:\\Users\\Abhiram\\Downloads\\SupportOps_Project\\supportops\\app.py', reloading
+2025-07-03 10:12:47,441 INFO  * Restarting with stat
+2025-07-03 10:12:47,922 WARNING  * Debugger is active!
+2025-07-03 10:12:47,922 INFO  * Debugger PIN: 863-137-132
+2025-07-03 10:13:01,466 INFO  * Detected change in 'C:\\Users\\Abhiram\\Downloads\\SupportOps_Project\\supportops\\app.py', reloading
+2025-07-03 10:13:01,500 INFO  * Restarting with stat
+2025-07-03 10:13:01,897 WARNING  * Debugger is active!
+2025-07-03 10:13:01,904 INFO  * Debugger PIN: 863-137-132
+2025-07-03 10:13:07,631 INFO Login success for user: admin
+2025-07-03 10:13:07,633 INFO 127.0.0.1 - - [03/Jul/2025 10:13:07] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-03 10:13:07,840 INFO 127.0.0.1 - - [03/Jul/2025 10:13:07] "GET / HTTP/1.1" 200 -
+2025-07-03 10:13:08,002 INFO 127.0.0.1 - - [03/Jul/2025 10:13:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 10:13:17,119 INFO 127.0.0.1 - - [03/Jul/2025 10:13:17] "GET /report HTTP/1.1" 200 -
+2025-07-03 10:13:17,472 INFO 127.0.0.1 - - [03/Jul/2025 10:13:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 10:13:29,117 INFO 127.0.0.1 - - [03/Jul/2025 10:13:29] "GET / HTTP/1.1" 200 -
+2025-07-03 10:13:29,480 INFO 127.0.0.1 - - [03/Jul/2025 10:13:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 10:13:34,594 WARNING Server restarted (simulated)
+2025-07-03 10:13:34,594 INFO 127.0.0.1 - - [03/Jul/2025 10:13:34] "[32mGET /restart_server HTTP/1.1[0m" 302 -
+2025-07-03 10:13:34,919 INFO 127.0.0.1 - - [03/Jul/2025 10:13:34] "GET / HTTP/1.1" 200 -
+2025-07-03 10:13:35,187 INFO 127.0.0.1 - - [03/Jul/2025 10:13:35] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 10:13:36,361 WARNING Server restarted (simulated)
+2025-07-03 10:13:36,363 INFO 127.0.0.1 - - [03/Jul/2025 10:13:36] "[32mGET /restart_server HTTP/1.1[0m" 302 -
+2025-07-03 10:13:36,691 INFO 127.0.0.1 - - [03/Jul/2025 10:13:36] "GET / HTTP/1.1" 200 -
+2025-07-03 10:13:36,940 INFO 127.0.0.1 - - [03/Jul/2025 10:13:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 10:26:46,434 INFO 127.0.0.1 - - [03/Jul/2025 10:26:46] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-03 10:26:46,700 INFO 127.0.0.1 - - [03/Jul/2025 10:26:46] "GET /login HTTP/1.1" 200 -
+2025-07-03 10:26:46,746 INFO 127.0.0.1 - - [03/Jul/2025 10:26:46] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 10:27:59,876 ERROR Login failed for user: admin
+2025-07-03 10:27:59,878 INFO 127.0.0.1 - - [03/Jul/2025 10:27:59] "POST /login HTTP/1.1" 200 -
+2025-07-03 10:28:00,128 INFO 127.0.0.1 - - [03/Jul/2025 10:28:00] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 11:34:17,036 ERROR Login failed for user: Abhi
+2025-07-03 11:34:17,036 INFO 127.0.0.1 - - [03/Jul/2025 11:34:17] "POST /login HTTP/1.1" 200 -
+2025-07-03 11:34:17,281 INFO 127.0.0.1 - - [03/Jul/2025 11:34:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 11:56:47,069 INFO Login success for user: admin
+2025-07-03 11:56:47,072 INFO 127.0.0.1 - - [03/Jul/2025 11:56:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-03 11:56:47,300 INFO 127.0.0.1 - - [03/Jul/2025 11:56:47] "GET / HTTP/1.1" 200 -
+2025-07-03 11:56:47,392 INFO 127.0.0.1 - - [03/Jul/2025 11:56:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 11:56:51,714 INFO 127.0.0.1 - - [03/Jul/2025 11:56:51] "GET /report HTTP/1.1" 200 -
+2025-07-03 11:56:52,091 INFO 127.0.0.1 - - [03/Jul/2025 11:56:52] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 11:57:18,653 INFO Issue reported by admin in module hello
+2025-07-03 11:57:18,653 INFO 127.0.0.1 - - [03/Jul/2025 11:57:18] "[32mPOST /report HTTP/1.1[0m" 302 -
+2025-07-03 11:57:18,974 INFO 127.0.0.1 - - [03/Jul/2025 11:57:18] "GET / HTTP/1.1" 200 -
+2025-07-03 11:57:19,226 INFO 127.0.0.1 - - [03/Jul/2025 11:57:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 11:57:21,793 INFO 127.0.0.1 - - [03/Jul/2025 11:57:21] "GET /report HTTP/1.1" 200 -
+2025-07-03 11:57:22,126 INFO 127.0.0.1 - - [03/Jul/2025 11:57:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 11:57:23,516 INFO 127.0.0.1 - - [03/Jul/2025 11:57:23] "GET / HTTP/1.1" 200 -
+2025-07-03 11:57:23,855 INFO 127.0.0.1 - - [03/Jul/2025 11:57:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 11:57:26,154 WARNING Server restarted (simulated)
+2025-07-03 11:57:26,155 INFO 127.0.0.1 - - [03/Jul/2025 11:57:26] "[32mGET /restart_server HTTP/1.1[0m" 302 -
+2025-07-03 11:57:26,473 INFO 127.0.0.1 - - [03/Jul/2025 11:57:26] "GET / HTTP/1.1" 200 -
+2025-07-03 11:57:26,725 INFO 127.0.0.1 - - [03/Jul/2025 11:57:26] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:09:36,112 INFO 127.0.0.1 - - [03/Jul/2025 12:09:36] "GET / HTTP/1.1" 200 -
+2025-07-03 12:09:36,362 INFO 127.0.0.1 - - [03/Jul/2025 12:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:09:38,473 INFO 127.0.0.1 - - [03/Jul/2025 12:09:38] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-03 12:09:38,798 INFO 127.0.0.1 - - [03/Jul/2025 12:09:38] "GET /login HTTP/1.1" 200 -
+2025-07-03 12:09:39,045 INFO 127.0.0.1 - - [03/Jul/2025 12:09:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:09:47,828 INFO Login success for user: admin
+2025-07-03 12:09:47,828 INFO 127.0.0.1 - - [03/Jul/2025 12:09:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-03 12:09:48,161 INFO 127.0.0.1 - - [03/Jul/2025 12:09:48] "GET / HTTP/1.1" 200 -
+2025-07-03 12:09:48,415 INFO 127.0.0.1 - - [03/Jul/2025 12:09:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:10:48,860 INFO  * Detected change in 'C:\\Users\\Abhiram\\Downloads\\SupportOps_Project\\supportops\\app.py', reloading
+2025-07-03 12:10:48,927 INFO  * Restarting with stat
+2025-07-03 12:10:49,707 WARNING  * Debugger is active!
+2025-07-03 12:10:49,714 INFO  * Debugger PIN: 863-137-132
+2025-07-03 12:10:52,093 INFO  * Detected change in 'C:\\Users\\Abhiram\\Downloads\\SupportOps_Project\\supportops\\app.py', reloading
+2025-07-03 12:10:52,130 INFO  * Restarting with stat
+2025-07-03 12:10:52,546 WARNING  * Debugger is active!
+2025-07-03 12:10:52,555 INFO  * Debugger PIN: 863-137-132
+2025-07-03 12:10:56,393 INFO 127.0.0.1 - - [03/Jul/2025 12:10:56] "GET / HTTP/1.1" 200 -
+2025-07-03 12:10:56,677 INFO 127.0.0.1 - - [03/Jul/2025 12:10:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:12:21,695 INFO  * Detected change in 'C:\\Users\\Abhiram\\Downloads\\SupportOps_Project\\supportops\\app.py', reloading
+2025-07-03 12:12:21,733 INFO  * Restarting with stat
+2025-07-03 12:12:22,166 WARNING  * Debugger is active!
+2025-07-03 12:12:22,177 INFO  * Debugger PIN: 863-137-132
+2025-07-03 12:12:23,449 INFO  * Detected change in 'C:\\Users\\Abhiram\\Downloads\\SupportOps_Project\\supportops\\app.py', reloading
+2025-07-03 12:12:23,490 INFO  * Restarting with stat
+2025-07-03 12:12:23,844 WARNING  * Debugger is active!
+2025-07-03 12:12:23,858 INFO  * Debugger PIN: 863-137-132
+2025-07-03 12:12:58,659 INFO 127.0.0.1 - - [03/Jul/2025 12:12:58] "GET / HTTP/1.1" 200 -
+2025-07-03 12:12:58,939 INFO 127.0.0.1 - - [03/Jul/2025 12:12:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:13:02,610 INFO 127.0.0.1 - - [03/Jul/2025 12:13:02] "[32mPOST /close_issue/1 HTTP/1.1[0m" 302 -
+2025-07-03 12:13:02,952 INFO 127.0.0.1 - - [03/Jul/2025 12:13:02] "GET / HTTP/1.1" 200 -
+2025-07-03 12:13:03,200 INFO 127.0.0.1 - - [03/Jul/2025 12:13:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:16:24,364 INFO  * Detected change in 'C:\\Users\\Abhiram\\Downloads\\SupportOps_Project\\supportops\\app.py', reloading
+2025-07-03 12:16:24,406 INFO  * Restarting with stat
+2025-07-03 12:16:24,822 WARNING  * Debugger is active!
+2025-07-03 12:16:24,838 INFO  * Debugger PIN: 863-137-132
+2025-07-03 12:16:27,259 INFO  * Detected change in 'C:\\Users\\Abhiram\\Downloads\\SupportOps_Project\\supportops\\app.py', reloading
+2025-07-03 12:16:27,303 INFO  * Restarting with stat
+2025-07-03 12:16:27,750 WARNING  * Debugger is active!
+2025-07-03 12:16:27,756 INFO  * Debugger PIN: 863-137-132
+2025-07-03 12:16:33,546 INFO 127.0.0.1 - - [03/Jul/2025 12:16:33] "GET / HTTP/1.1" 200 -
+2025-07-03 12:16:33,839 INFO 127.0.0.1 - - [03/Jul/2025 12:16:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:16:43,291 INFO 127.0.0.1 - - [03/Jul/2025 12:16:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-03 12:16:43,621 INFO 127.0.0.1 - - [03/Jul/2025 12:16:43] "GET /login HTTP/1.1" 200 -
+2025-07-03 12:16:43,875 INFO 127.0.0.1 - - [03/Jul/2025 12:16:43] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:16:50,490 INFO Login success for user: admin
+2025-07-03 12:16:50,490 INFO 127.0.0.1 - - [03/Jul/2025 12:16:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-03 12:16:50,826 INFO 127.0.0.1 - - [03/Jul/2025 12:16:50] "GET / HTTP/1.1" 200 -
+2025-07-03 12:16:51,080 INFO 127.0.0.1 - - [03/Jul/2025 12:16:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:16:53,957 INFO 127.0.0.1 - - [03/Jul/2025 12:16:53] "GET /report HTTP/1.1" 200 -
+2025-07-03 12:16:54,307 INFO 127.0.0.1 - - [03/Jul/2025 12:16:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:17:08,026 INFO Issue reported by admin in module hoppy
+2025-07-03 12:17:08,027 INFO 127.0.0.1 - - [03/Jul/2025 12:17:08] "[32mPOST /report HTTP/1.1[0m" 302 -
+2025-07-03 12:17:08,345 INFO 127.0.0.1 - - [03/Jul/2025 12:17:08] "GET / HTTP/1.1" 200 -
+2025-07-03 12:17:08,592 INFO 127.0.0.1 - - [03/Jul/2025 12:17:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:17:18,832 INFO 127.0.0.1 - - [03/Jul/2025 12:17:18] "[32mPOST /close_issue/2 HTTP/1.1[0m" 302 -
+2025-07-03 12:17:19,154 INFO 127.0.0.1 - - [03/Jul/2025 12:17:19] "GET / HTTP/1.1" 200 -
+2025-07-03 12:17:19,410 INFO 127.0.0.1 - - [03/Jul/2025 12:17:19] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:18:58,137 WARNING Server restarted (simulated)
+2025-07-03 12:18:58,137 INFO 127.0.0.1 - - [03/Jul/2025 12:18:58] "[32mGET /restart_server HTTP/1.1[0m" 302 -
+2025-07-03 12:18:58,419 INFO 127.0.0.1 - - [03/Jul/2025 12:18:58] "GET / HTTP/1.1" 200 -
+2025-07-03 12:18:58,474 INFO 127.0.0.1 - - [03/Jul/2025 12:18:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:18:59,009 WARNING Server restarted (simulated)
+2025-07-03 12:18:59,009 INFO 127.0.0.1 - - [03/Jul/2025 12:18:59] "[32mGET /restart_server HTTP/1.1[0m" 302 -
+2025-07-03 12:18:59,298 INFO 127.0.0.1 - - [03/Jul/2025 12:18:59] "GET / HTTP/1.1" 200 -
+2025-07-03 12:18:59,338 WARNING Server restarted (simulated)
+2025-07-03 12:18:59,341 INFO 127.0.0.1 - - [03/Jul/2025 12:18:59] "[32mGET /restart_server HTTP/1.1[0m" 302 -
+2025-07-03 12:18:59,638 INFO 127.0.0.1 - - [03/Jul/2025 12:18:59] "GET / HTTP/1.1" 200 -
+2025-07-03 12:18:59,672 INFO 127.0.0.1 - - [03/Jul/2025 12:18:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 12:19:02,418 INFO 127.0.0.1 - - [03/Jul/2025 12:19:02] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-07-03 12:19:02,664 INFO 127.0.0.1 - - [03/Jul/2025 12:19:02] "GET /login HTTP/1.1" 200 -
+2025-07-03 12:19:02,727 INFO 127.0.0.1 - - [03/Jul/2025 12:19:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 13:04:24,751 INFO Login success for user: admin2
+2025-07-03 13:04:24,766 INFO 127.0.0.1 - - [03/Jul/2025 13:04:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-03 13:04:24,997 INFO 127.0.0.1 - - [03/Jul/2025 13:04:24] "GET / HTTP/1.1" 200 -
+2025-07-03 13:04:25,084 INFO 127.0.0.1 - - [03/Jul/2025 13:04:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 13:04:31,279 INFO 127.0.0.1 - - [03/Jul/2025 13:04:31] "GET /report HTTP/1.1" 200 -
+2025-07-03 13:04:31,617 INFO 127.0.0.1 - - [03/Jul/2025 13:04:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 13:05:01,138 INFO Issue reported by admin2 in module login
+2025-07-03 13:05:01,142 INFO 127.0.0.1 - - [03/Jul/2025 13:05:01] "[32mPOST /report HTTP/1.1[0m" 302 -
+2025-07-03 13:05:01,466 INFO 127.0.0.1 - - [03/Jul/2025 13:05:01] "GET / HTTP/1.1" 200 -
+2025-07-03 13:05:01,732 INFO 127.0.0.1 - - [03/Jul/2025 13:05:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 14:05:48,049 INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-07-03 14:05:48,049 INFO [33mPress CTRL+C to quit[0m
+2025-07-03 14:05:48,054 INFO  * Restarting with stat
+2025-07-03 14:05:48,490 WARNING  * Debugger is active!
+2025-07-03 14:05:48,499 INFO  * Debugger PIN: 863-137-132
+2025-07-03 14:06:22,012 INFO 127.0.0.1 - - [03/Jul/2025 14:06:22] "[32mGET / HTTP/1.1[0m" 302 -
+2025-07-03 14:06:22,249 INFO 127.0.0.1 - - [03/Jul/2025 14:06:22] "GET /login HTTP/1.1" 200 -
+2025-07-03 14:06:22,467 INFO 127.0.0.1 - - [03/Jul/2025 14:06:22] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-03 14:06:22,608 INFO 127.0.0.1 - - [03/Jul/2025 14:06:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2025-07-03 14:06:50,289 INFO Login success for user: admin2
+2025-07-03 14:06:50,289 INFO 127.0.0.1 - - [03/Jul/2025 14:06:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-07-03 14:06:50,640 INFO 127.0.0.1 - - [03/Jul/2025 14:06:50] "GET / HTTP/1.1" 200 -
+2025-07-03 14:06:50,876 INFO 127.0.0.1 - - [03/Jul/2025 14:06:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -

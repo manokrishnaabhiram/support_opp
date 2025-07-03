@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SupportOps Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome, {{ username }}!</h2>
+        <a href="/logout">Logout</a> | <a href="/report">Report Issue</a> | <a href="/restart_server">Simulate Server Restart</a>
+        <h3>Reported Issues</h3>
+        <table>
+            <tr><th>ID</th><th>Module</th><th>Description</th><th>Status</th><th>Action</th></tr>
+            {% if issues %}
+                {% for issue in issues %}
+                <tr>
+                    <td>{{ issue.id }}</td>
+                    <td>{{ issue.module }}</td>
+                    <td>{{ issue.description }}</td>
+                    <td>{{ issue.status }}</td>
+                    <td>
+                      {% if issue.status == 'open' %}
+                        <form action="{{ url_for('close_issue', issue_id=issue.id) }}" method="post" style="display:inline;">
+                          <button type="submit" onclick="return confirm('Close this issue?');">Close</button>
+                        </form>
+                      {% else %}
+                        Closed
+                      {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            {% else %}
+                <tr><td colspan="5">No issues reported yet.</td></tr>
+            {% endif %}
+        </table>
+    </div>
+</body>
+</html>

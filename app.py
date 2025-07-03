@@ -16,11 +16,11 @@ logging.basicConfig(filename='logs/app.log', level=logging.INFO,
 
 # MySQL connection config
 MYSQL_CONFIG = {
-    'user': os.environ.get('root'),
-    'password': os.environ.get('iULqNsZeOzjCQWmzfGqQWqxydBtpDKbk'),
-    'host': os.environ.get('mysql.railway.internal'),
-    'database': os.environ.get('railway'),
-    'port': int(os.environ.get('MYSQLPORT', 3306)),
+    'user': os.environ.get('MYSQL_USER'),
+    'password': os.environ.get('MYSQL_PASSWORD'),
+    'host': os.environ.get('MYSQL_HOST'),
+    'database': os.environ.get('MYSQL_DATABASE'),
+    'port': int(os.environ.get('MYSQL_PORT', 3306)),
     'autocommit': True
 }
 

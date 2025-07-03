@@ -16,13 +16,15 @@ logging.basicConfig(filename='logs/app.log', level=logging.INFO,
 
 # MySQL connection config
 MYSQL_CONFIG = {
-    'user': os.environ.get('MYSQL_USER'),
+   'user': os.environ.get('MYSQL_USER'),
     'password': os.environ.get('MYSQL_PASSWORD'),
     'host': os.environ.get('MYSQL_HOST'),
     'database': os.environ.get('MYSQL_DATABASE'),
     'port': int(os.environ.get('MYSQL_PORT', 3306)),
     'autocommit': True
 }
+
+
 
 def get_db():
     conn = pymysql.connect(
@@ -58,6 +60,15 @@ def init_db():
         username VARCHAR(100),
         status VARCHAR(20),
         timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    )''')
+    c.execute('''CREATE TABLE IF NOT EXISTS knowledge_articles (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        issue_id INT,
+        author VARCHAR(100),
+        title VARCHAR(255),
+        content TEXT,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        FOREIGN KEY(issue_id) REFERENCES issues(id)
     )''')
     conn.commit()
     conn.close()
@@ -153,8 +164,31 @@ def close_issue(issue_id):
         ('closed', issue_id)
     )
     conn.commit()
-    flash('Issue closed successfully.')
-    return redirect(url_for('index'))
+    # Redirect to knowledge article creation page after closing the issue
+    flash('Issue closed successfully. Please create a knowledge article about the resolution.')
+    return redirect(url_for('create_knowledge_article', issue_id=issue_id))
+
+@app.route('/knowledge_article/<int:issue_id>', methods=['GET', 'POST'])
+def create_knowledge_article(issue_id):
+    if 'username' not in session:
+        return redirect(url_for('login'))
+    conn = get_db()
+    c = conn.cursor()
+    # Fetch issue details for context
+    c.execute('SELECT * FROM issues WHERE id=%s', (issue_id,))
+    issue = c.fetchone()
+    if request.method == 'POST':
+        title = request.form['title']
+        content = request.form['content']
+        author = session['username']
+        c.execute(
+            'INSERT INTO knowledge_articles (issue_id, author, title, content) VALUES (%s, %s, %s, %s)',
+            (issue_id, author, title, content)
+        )
+        conn.commit()
+        flash('Knowledge article created successfully.')
+        return redirect(url_for('index'))
+    return render_template('create_knowledge_article.html', issue=issue)
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)), debug=True)

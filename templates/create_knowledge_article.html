@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Knowledge Article</title>
+</head>
+<body>
+    <h2>Create Knowledge Article for Issue #{{ issue.id }}</h2>
+    <p><strong>Module:</strong> {{ issue.module }}</p>
+    <p><strong>Description:</strong> {{ issue.description }}</p>
+    <form method="post">
+        <label for="title">Article Title:</label><br>
+        <input type="text" id="title" name="title" required><br><br>
+        <label for="content">Resolution Details:</label><br>
+        <textarea id="content" name="content" rows="8" cols="60" required></textarea><br><br>
+        <button type="submit">Create Article</button>
+    </form>
+</body>
+</html>

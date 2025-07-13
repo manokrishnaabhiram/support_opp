@@ -4,8 +4,18 @@ body {
     margin: 0;
     padding: 0;
 }
-/* Figma-inspired container styles */
+/* Default container styles */
 .container {
+    background: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 500px;
+}
+
+/* Figma-inspired styles for login page only */
+.container.login-container {
     display: flex;
     width: 320px;
     min-width: 320px;
@@ -18,7 +28,7 @@ body {
     border: var(--sds-size-stroke-border) solid var(--sds-color-border-default-default);
     background: var(--sds-color-background-default-default);
     margin: 40px auto;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Optional: keep shadow for depth */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 h2, h3 {
     color: #333;

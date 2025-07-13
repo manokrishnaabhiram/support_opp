@@ -1,6 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    /* Replace the URL below with your image path if needed */
+    background: url('/static/login-bg.png') no-repeat center center fixed;
+    background-size: cover;
     margin: 0;
     padding: 0;
 }

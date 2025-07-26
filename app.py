@@ -8,6 +8,28 @@ import pymysql
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # For session management
 
+# --- Signup Route ---
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        name = request.form['name']
+        username = request.form['username']
+        password = request.form['password']
+        conn = get_db()
+        c = conn.cursor()
+        # Check if username already exists
+        c.execute('SELECT * FROM users WHERE username=%s', (username,))
+        user = c.fetchone()
+        if user:
+            flash('Username already exists! Please choose another.')
+            return render_template('signup.html')
+        # Insert new user
+        c.execute('INSERT INTO users (username, password, name) VALUES (%s, %s, %s)', (username, password, name))
+        conn.commit()
+        flash('Signup successful! Please login.')
+        return redirect(url_for('login'))
+    return render_template('signup.html')
+
 # Logging setup
 if not os.path.exists('logs'):
     os.makedirs('logs')
@@ -41,8 +63,10 @@ def get_db():
 def init_db():
     conn = get_db()
     c = conn.cursor()
+    # Add 'name' column to users table for signup
     c.execute('''CREATE TABLE IF NOT EXISTS users (
         id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(100) NOT NULL,
         username VARCHAR(100) UNIQUE NOT NULL,
         password VARCHAR(100) NOT NULL
     )''')

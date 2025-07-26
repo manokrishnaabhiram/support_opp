@@ -1,26 +1,44 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 # import mysql.connector  # Not needed, using pymysql instead
-import logging
+# ...existing code...
 from datetime import datetime
 import pymysql
 
 app = Flask(__name__)
 app.secret_key = 'supersecretkey'  # For session management
 
-# Logging setup
-if not os.path.exists('logs'):
-    os.makedirs('logs')
-logging.basicConfig(filename='logs/app.log', level=logging.INFO,
-                    format='%(asctime)s %(levelname)s %(message)s')
+# --- Signup Route ---
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    if request.method == 'POST':
+        name = request.form['name']
+        username = request.form['username']
+        password = request.form['password']
+        conn = get_db()
+        c = conn.cursor()
+        # Check if username already exists
+        c.execute('SELECT * FROM users WHERE username=%s', (username,))
+        user = c.fetchone()
+        if user:
+            flash('Username already exists! Please choose another.')
+            return render_template('signup.html')
+        # Insert new user
+        c.execute('INSERT INTO users (username, password, name) VALUES (%s, %s, %s)', (username, password, name))
+        conn.commit()
+        flash('Signup successful! Please login.')
+        return redirect(url_for('login'))
+    return render_template('signup.html')
+
+# ...existing code...
 
 # MySQL connection config
 MYSQL_CONFIG = {
-   'user': os.environ.get('MYSQL_USER'),
-    'password': os.environ.get('MYSQL_PASSWORD'),
-    'host': os.environ.get('MYSQL_HOST'),
-    'database': os.environ.get('MYSQL_DATABASE'),
-    'port': int(os.environ.get('MYSQL_PORT', 3306)),
+   'user': 'root',
+    'password': 'Abhi@1289',
+    'host': 'localhost',
+    'database': 'support_opp',
+    'port': 3000,
     'autocommit': True
 }
 
@@ -41,8 +59,10 @@ def get_db():
 def init_db():
     conn = get_db()
     c = conn.cursor()
+    # Add 'name' column to users table for signup
     c.execute('''CREATE TABLE IF NOT EXISTS users (
         id INT AUTO_INCREMENT PRIMARY KEY,
+        name VARCHAR(100) NOT NULL,
         username VARCHAR(100) UNIQUE NOT NULL,
         password VARCHAR(100) NOT NULL
     )''')
@@ -104,12 +124,12 @@ def login():
             session['username'] = username
             c.execute('INSERT INTO logins (username, status) VALUES (%s, %s)', (username, 'success'))
             conn.commit()
-            logging.info(f"Login success for user: {username}")
+            # ...existing code...
             return redirect(url_for('index'))
         else:
             c.execute('INSERT INTO logins (username, status) VALUES (%s, %s)', (username, 'failed'))
             conn.commit()
-            logging.error(f"Login failed for user: {username}")
+            # ...existing code...
             flash('Invalid credentials!')
     return render_template('login.html')
 
@@ -132,7 +152,7 @@ def report_issue():
         user_id = user['id'] if user else None
         c.execute('INSERT INTO issues (user_id, module, description) VALUES (%s, %s, %s)', (user_id, module, description))
         conn.commit()
-        logging.info(f"Issue reported by {session['username']} in module {module}")
+        # ...existing code...
         flash('Issue reported!')
         return redirect(url_for('index'))
     return render_template('report_issue.html')
@@ -149,7 +169,7 @@ def issues():
 
 @app.route('/restart_server')
 def restart_server():
-    logging.warning('Server restarted (simulated)')
+    # ...existing code...
     flash('Server restart simulated. Check logs for details.')
     return redirect(url_for('index'))
 

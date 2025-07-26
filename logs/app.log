@@ -328,3 +328,11 @@
 2025-07-26 07:21:42,291 INFO 127.0.0.1 - - [26/Jul/2025 07:21:42] "[32mPOST /login HTTP/1.1[0m" 302 -
 2025-07-26 07:21:42,630 INFO 127.0.0.1 - - [26/Jul/2025 07:21:42] "GET / HTTP/1.1" 200 -
 2025-07-26 07:21:42,876 INFO 127.0.0.1 - - [26/Jul/2025 07:21:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+2025-07-26 07:22:29,289 INFO  * Detected change in 'D:\\support_opp\\app.py', reloading
+2025-07-26 07:22:29,394 INFO  * Restarting with stat
+2025-07-26 07:22:29,927 WARNING  * Debugger is active!
+2025-07-26 07:22:29,934 INFO  * Debugger PIN: 109-652-705
+2025-07-26 07:22:49,050 INFO  * Detected change in 'D:\\support_opp\\app.py', reloading
+2025-07-26 07:22:49,088 INFO  * Restarting with stat
+2025-07-26 07:22:49,536 WARNING  * Debugger is active!
+2025-07-26 07:22:49,540 INFO  * Debugger PIN: 109-652-705

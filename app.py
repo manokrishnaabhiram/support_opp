@@ -1,7 +1,7 @@
 import os
 from flask import Flask, render_template, request, redirect, url_for, session, flash
 # import mysql.connector  # Not needed, using pymysql instead
-import logging
+# ...existing code...
 from datetime import datetime
 import pymysql
 
@@ -30,11 +30,7 @@ def signup():
         return redirect(url_for('login'))
     return render_template('signup.html')
 
-# Logging setup
-if not os.path.exists('logs'):
-    os.makedirs('logs')
-logging.basicConfig(filename='logs/app.log', level=logging.INFO,
-                    format='%(asctime)s %(levelname)s %(message)s')
+# ...existing code...
 
 # MySQL connection config
 MYSQL_CONFIG = {
@@ -128,12 +124,12 @@ def login():
             session['username'] = username
             c.execute('INSERT INTO logins (username, status) VALUES (%s, %s)', (username, 'success'))
             conn.commit()
-            logging.info(f"Login success for user: {username}")
+            # ...existing code...
             return redirect(url_for('index'))
         else:
             c.execute('INSERT INTO logins (username, status) VALUES (%s, %s)', (username, 'failed'))
             conn.commit()
-            logging.error(f"Login failed for user: {username}")
+            # ...existing code...
             flash('Invalid credentials!')
     return render_template('login.html')
 
@@ -156,7 +152,7 @@ def report_issue():
         user_id = user['id'] if user else None
         c.execute('INSERT INTO issues (user_id, module, description) VALUES (%s, %s, %s)', (user_id, module, description))
         conn.commit()
-        logging.info(f"Issue reported by {session['username']} in module {module}")
+        # ...existing code...
         flash('Issue reported!')
         return redirect(url_for('index'))
     return render_template('report_issue.html')
@@ -173,7 +169,7 @@ def issues():
 
 @app.route('/restart_server')
 def restart_server():
-    logging.warning('Server restarted (simulated)')
+    # ...existing code...
     flash('Server restart simulated. Check logs for details.')
     return redirect(url_for('index'))
 

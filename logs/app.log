@@ -344,3 +344,14 @@
 2025-07-26 07:24:05,586 INFO  * Restarting with stat
 2025-07-26 07:24:06,132 WARNING  * Debugger is active!
 2025-07-26 07:24:06,132 INFO  * Debugger PIN: 109-652-705
+2025-07-26 07:25:25,654 INFO  * Detected change in 'D:\\support_opp\\app.py', reloading
+2025-07-26 07:25:25,722 INFO  * Restarting with stat
+2025-07-26 07:25:26,184 WARNING  * Debugger is active!
+2025-07-26 07:25:26,202 INFO  * Debugger PIN: 109-652-705
+2025-07-26 07:28:41,439 INFO  * Detected change in 'D:\\support_opp\\app.py', reloading
+2025-07-26 07:28:41,507 INFO  * Restarting with stat
+2025-07-26 07:28:41,956 WARNING  * Debugger is active!
+2025-07-26 07:28:41,959 INFO  * Debugger PIN: 109-652-705
+2025-07-26 07:30:33,558 INFO  * Detected change in 'D:\\support_opp\\app.py', reloading
+2025-07-26 07:30:33,599 INFO  * Restarting with stat
+2025-07-26 07:30:42,197 INFO  * Restarting with stat

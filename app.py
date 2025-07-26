@@ -34,11 +34,11 @@ def signup():
 
 # MySQL connection config
 MYSQL_CONFIG = {
-   'user': 'root',
-    'password': 'Abhi@1289',
-    'host': 'localhost',
-    'database': 'support_opp',
-    'port': 3000,
+    'user': os.environ.get('MYSQL_USER'),
+    'password': os.environ.get('MYSQL_PASSWORD'),
+    'host': os.environ.get('MYSQL_HOST'),
+    'database': os.environ.get('MYSQL_DATABASE'),
+    'port': int(os.environ.get('MYSQL_PORT')),
     'autocommit': True
 }
 
